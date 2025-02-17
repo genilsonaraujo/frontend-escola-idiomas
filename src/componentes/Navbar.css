@@ -1,0 +1,147 @@
+/* Estilo da navbar moderna */
+.navbar {
+    background-color: #1f1f1f; /* Cor de fundo escura */
+    border-radius: 4px;
+    padding: 1.5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    position: fisticky;;
+    top: 0;
+    z-index: 1000; /* Para manter a navbar fixa no topo */
+  }
+  
+  /* Estilo para a logo */
+  .navbar-logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #61dafb; /* Azul vibrante */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding-right: 30px ;
+  }
+  
+  /* Estilo para a lista de links */
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espaçamento entre links */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo para cada link */
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease-in-out;
+
+  }
+  
+  .navbar a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #61dafb;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar a:hover::before {
+    visibility: visible;
+    width: 100%;
+  }
+  
+  .navbar a:hover {
+    color: #61dafb;
+  }
+  
+  /* Botão para telas pequenas */
+  .navbar-logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #61dafb; /* Azul vibrante */
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      padding-right: 30px ;
+    }
+
+  .navbar-toggle {
+    display: none;
+    background-color: #61dafb;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #1f1f1f;
+    border-radius: 4px;
+  }
+  
+  /* Estilo para telas menores */
+  @media (max-width: 768px) {
+    .navbar{
+    width: 95%;
+   }      
+    .navbar-logo {
+      font-size: 1.4rem;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.8rem;
+      position: relative;
+      padding: 5px 0;
+      transition: color 0.3s ease-in-out;
+      }
+          
+    .navbar ul {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background-color: #1f1f1f;
+      position: absolute;
+      top: 7%;
+      right: 35%;
+      width: 100px;
+      border-radius: 8px;
+      padding: 1rem;
+    }
+  
+    .navbar ul.active {
+      display: flex;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  }
+@media (max-width: 420px) {
+.navbar{
+    width:85%;
+   }
+    .navbar-logo {
+    font-size: 1.2rem;
+    }
+     .navbar ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 5%;
+    right: 28%;
+    width: 74px;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  }
+
+  

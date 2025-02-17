@@ -1,0 +1,1033 @@
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%; /* No Flexbox: Cards ocupam 100% da largura em telas pequenas */
+  } 
+}
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  transform: scale(0.97); /* Reduz tudo para 80% do tamanho original */
+  transform-origin: top left; /* Define o ponto de origem para a transformação */
+  
+  
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+  justify-content: center; /* Alinha horizontalmente */
+  gap: 20px;              /* Espaçamento entre as imagens */
+}
+.container_page {
+  max-width: 1200px; /* Largura máxima da área do conteúdo */
+  margin: 0 auto;    /* Centraliza o container horizontalmente */
+  padding: 20px;     /* Espaço interno em torno do conteúdo */
+  box-sizing: border-box; /* Inclui padding e bordas no tamanho total */
+  gap: 20px;              /* Espaçamento entre as imagens */
+}
+
+header {
+  background: #c4c2c2;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+
+.group-1,
+.group-1 * {
+box-sizing: border-box;
+}
+.group-1 {
+position: relative;
+}
+.rectboard {
+background: linear-gradient(
+  90deg,
+  rgba(255, 0, 0, 1) 0%,
+  rgba(249, 113, 8, 0.9) 100%
+);
+width: 1280px;
+height: 248px;
+position: absolute;
+left: 0px;
+top: 0px;
+z-index: 0; /* Certifique-se de que esse valor é maior que o dos outros elementos */
+}
+.botao-portal {
+  background: #ebe2e2; /* Cor de fundo do botão */
+  border-radius: 20px;
+  width: 258px;
+  height: 62px;
+  position: absolute;
+  left: 974px;
+  top: 110px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* Remove o sublinhado */
+  color: rgb(233, 21, 21); /* Cor do texto */
+  font-weight: bold;
+  font-size: 18px;
+  border: none; /* Remove qualquer borda extra */
+  cursor: pointer; /* Deixa o mouse com aparência de clique */
+  transition: all 0.3s ease-in-out; /* Suaviza o efeito ao passar o mouse */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+/* Efeito ao passar o mouse */
+.botao-portal:hover {
+  background: #f0ebeb; /* Cor mais escura ao passar o mouse */
+  transform: scale(1.05); /* Aumenta um pouco o botão */
+}
+
+/* Efeito ao clicar */
+.botao-portal:active {
+  transform: scale(0.95); /* Dá um efeito de clique */
+}
+.jbli-logo {
+background: #ffffff;
+border-radius: 5px;
+width: 216px;
+height: 82px;
+position: absolute;
+left: 108px;
+top: 80px;
+}
+.jbli-logo-1 {
+width: 209px;
+height: 70px;
+position: absolute;
+left: 113px;
+top: 85px;
+object-fit: cover;
+}
+.portal-do-aluno {
+  color: #ff0d0d;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative; /* Mudando de absolute para relative */
+  width: 100%; /* Para alinhar corretamente dentro do botão */
+  height: auto;
+  z-index: 10;
+  display: flex;
+  top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.group-2,
+.group-2 * {
+box-sizing: border-box;
+}
+.group-2 {
+position: relative;
+}
+.menu-inferior {
+display: flex;
+background: #f1b6b6;
+width: 1280px;
+height: 78px;
+position: relative;
+left: 0px;
+top: 170px;
+justify-content: space-around; /* Distribui os itens igualmente */
+flex-wrap: wrap; /* Evita sobreposição em telas menores */
+gap: 10px; /* Espaçamento entre os links */
+}
+/*.menu-inferior a {
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  color: white;
+  background-color: #007bff;
+  border-radius: 5px;
+  transition: background 0.3s;
+}*/
+
+.home {
+color: #ff0000;
+text-align: left;
+font-family: "Inter-Regular", sans-serif;
+font-size: 20px;
+font-weight: 4
+00;
+position: absolute;
+left: 53px;
+top: 200px;
+width: 82px;
+height: 53px;
+}
+.portal-do-professor {
+color: #ff0000;
+text-align: left;
+font-family: "Inter-Regular", sans-serif;
+font-size: 20px;
+font-weight: 400;
+position: absolute;
+left: 990px;
+top: 200px;
+width: 252px;
+height: 53px;
+}
+.cursos {
+color: #ff0000;
+text-align: left;
+font-family: "Inter-Regular", sans-serif;
+font-size: 20px;
+font-weight: 400;
+position: absolute;
+left: 768px;
+top: 200px;
+width: 154px;
+height: 53px;
+}
+.loja {
+color: #ff0000;
+text-align: left;
+font-family: "Inter-Regular", sans-serif;
+font-size: 20px;
+font-weight: 400;
+position: absolute;
+left: 615px;
+top: 200px;
+width: 82px;
+height: 53px;
+}
+.cadastro {
+color: #ff0000;
+text-align: left;
+font-family: "Inter-Regular", sans-serif;
+font-size: 20px;
+font-weight: 400;
+position: absolute;
+left: 401px;
+top: 200px;
+width: 132px;
+height: 53px;
+}
+.sobre {
+color: #ff0000;
+text-align: left;
+font-family: "Inter-Regular", sans-serif;
+font-size: 20px;
+font-weight: 400;
+position: absolute;
+left: 216px;
+top: 200px;
+width: 82px;
+height: 53px;
+}
+.group-3,
+.group-3 * {
+box-sizing: border-box;
+}
+.group-3 { /*imagens ao lado dos livros no top*/
+height: auto;
+position: relative;
+overflow: visible;
+left: -350px;
+top: 190px;
+}
+.group-4,
+.group-4 * {
+box-sizing: border-box;
+}
+.group-4 {
+position: relative;
+}
+.l-1 { /*livro 1*/
+width: 329px;
+height: 476px;
+position: relative;
+left: 460px;
+top: -310px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+object-fit: cover;
+}
+.l-2-1 {
+width: 329px;
+height: 476px;
+position: absolute;
+left: 580px;
+top: -310px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+object-fit: cover;
+}
+.group-5,
+.group-5 * {
+box-sizing: border-box;
+}
+.group-5 {
+position: relative;
+top: -270px; /*altera a posicao do grupo*/
+left: 30px;
+}
+.group-5 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.group-5:hover {
+  transform: rotate(2deg) scale(0.98);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.card-informatica {
+background: #d9d9d9;
+width: 288px;
+height: 396px;
+position: absolute;
+left: 652px;
+top: 0px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.certificado-3 {
+width: 41px;
+height: 41px;
+position: absolute;
+left: 693px;
+top: 278px;
+object-fit: cover;
+}
+.curso-de-informatica {
+color: #000000;
+text-align: left;
+font-family: "Inter-Regular", sans-serif;
+font-size: 20px;
+font-weight: 400;
+position: absolute;
+left: 680px;
+top: 228px;
+}
+.livro-3 {
+width: 41px;
+height: 41px;
+position: absolute;
+left: 693px;
+top: 326px;
+object-fit: cover;
+}
+.certificado {
+color: #000000;
+text-align: left;
+font-family: "Inter-Regular", sans-serif;
+font-size: 20px;
+font-weight: 400;
+position: absolute;
+left: 753px;
+top: 283px;
+width: 142px;
+height: 31px;
+}
+.material-impresso {
+color: #000000;
+text-align: left;
+font-family: "Inter-Regular", sans-serif;
+font-size: 20px;
+font-weight: 400;
+position: absolute;
+left: 753px;
+top: 326px;
+width: 142px;
+height: 45px;
+}
+.informatica-1 {
+width: 288px;
+height: 202px;
+position: absolute;
+left: 652px;
+top: 0px;
+object-fit: cover;
+}
+.desconto-informatica {
+  background: #bd4bff;
+  border-radius: 5px;
+  width: 89px;
+  height: 70px;
+  position: absolute;
+  left: 338px;
+  top: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  ._15-off1{
+    color: #fffcfc;
+    text-align: center;
+    font-family: "Itim-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    position: absolute;
+    left: 340px;
+    top: 14px;
+    width: 84px;
+    height: 32px;
+    }
+
+.card-espanhol {
+background: #d9d9d9;
+width: 288px;
+height: 396px;
+position: absolute;
+left: 326px;
+top: 0px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.certificado-2 {
+width: 41px;
+height: 41px;
+position: absolute;
+left: 367px;
+top: 278px;
+object-fit: cover;
+}
+.curso-de-espanhol {
+color: #000000;
+text-align: left;
+font-family: "Inter-Regular", sans-serif;
+font-size: 20px;
+font-weight: 400;
+position: absolute;
+left: 380px;
+top: 228px;
+}
+.livro-2 {
+width: 41px;
+height: 41px;
+position: absolute;
+left: 367px;
+top: 326px;
+object-fit: cover;
+}
+.certificado2 {
+color: #000000;
+text-align: left;
+font-family: "Inter-Regular", sans-serif;
+font-size: 20px;
+font-weight: 400;
+position: absolute;
+left: 427px;
+top: 283px;
+width: 142px;
+height: 31px;
+}
+.material-impresso2 {
+color: #000000;
+text-align: left;
+font-family: "Inter-Regular", sans-serif;
+font-size: 20px;
+font-weight: 400;
+position: absolute;
+left: 427px;
+top: 326px;
+width: 142px;
+height: 45px;
+}
+.espanhol-1 {
+width: 288px;
+height: 202px;
+position: absolute;
+left: 326px;
+top: 0px;
+object-fit: cover;
+}
+.desconto-espanhol {
+background: #bd4bff;
+border-radius: 5px;
+width: 89px;
+height: 70px;
+position: absolute;
+left: 338px;
+top: 10px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+._15-off2 {
+color: #fffcfc;
+text-align: center;
+font-family: "Itim-Regular", sans-serif;
+font-size: 24px;
+font-weight: 400;
+position: absolute;
+left: 340px;
+top: 14px;
+width: 84px;
+height: 32px;
+}
+.card-ingles {
+background: #d9d9d9;
+width: 288px;
+height: 396px;
+position: absolute;
+left: 0px;
+top: 0px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.certificado-1 {
+width: 41px;
+height: 41px;
+position: absolute;
+left: 41px;
+top: 278px;
+object-fit: cover;
+}
+.curso-de-ingles {
+color: #000000;
+text-align: left;
+font-family: "Inter-Regular", sans-serif;
+font-size: 20px;
+font-weight: 400;
+position: absolute;
+left: 54px;
+top: 228px;
+}
+.ingles-1 {
+width: 288px;
+height: 202px;
+position: absolute;
+left: 0px;
+top: 0px;
+object-fit: cover;
+}
+.livro-1 {
+width: 41px;
+height: 41px;
+position: absolute;
+left: 41px;
+top: 326px;
+object-fit: cover;
+}
+.certificado1 {
+color: #000000;
+text-align: left;
+font-family: "Inter-Regular", sans-serif;
+font-size: 20px;
+font-weight: 400;
+position: absolute;
+left: 101px;
+top: 283px;
+width: 142px;
+height: 31px;
+}
+.material-impresso3 {
+color: #000000;
+text-align: left;
+font-family: "Inter-Regular", sans-serif;
+font-size: 20px;
+font-weight: 400;
+position: absolute;
+left: 101px;
+top: 326px;
+width: 142px;
+height: 45px;
+}
+.desconto-ingles {
+background: #bd4bff;
+border-radius: 5px;
+width: 89px;
+height: 70px;
+position: absolute;
+left: 12px;
+top: 11px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+._15-off3 {
+color: #fffcfc;
+text-align: center;
+font-family: "Itim-Regular", sans-serif;
+font-size: 24px;
+font-weight: 400;
+position: absolute;
+left: 14px;
+top: 15px;
+width: 84px;
+height: 32px;
+}
+.card-arduino {
+background: #d9d9d9;
+width: 288px;
+height: 396px;
+position: absolute;
+left: 978px;
+top: 0px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.certificado-4 {
+width: 41px;
+height: 41px;
+position: absolute;
+left: 1019px;
+top: 278px;
+object-fit: cover;
+}
+.curso-de-arduino {
+color: #000000;
+text-align: left;
+font-family: "Inter-Regular", sans-serif;
+font-size: 20px;
+font-weight: 400;
+position: absolute;
+left: 1032px;
+top: 228px;
+}
+.livro-4 {
+width: 41px;
+height: 41px;
+position: absolute;
+left: 1019px;
+top: 326px;
+object-fit: cover;
+}
+.certificado4 {
+color: #000000;
+text-align: left;
+font-family: "Inter-Regular", sans-serif;
+font-size: 20px;
+font-weight: 400;
+position: absolute;
+left: 1079px;
+top: 283px;
+width: 142px;
+height: 31px;
+}
+.material-impresso4 {
+color: #000000;
+text-align: left;
+font-family: "Inter-Regular", sans-serif;
+font-size: 20px;
+font-weight: 400;
+position: absolute;
+left: 1079px;
+top: 326px;
+width: 142px;
+height: 45px;
+}
+.arduino-1 {
+width: 288px;
+height: 202px;
+position: absolute;
+left: 978px;
+top: 0px;
+object-fit: cover;
+}
+.desconto-arduino {
+background: #bd4bff;
+border-radius: 5px;
+width: 89px;
+height: 70px;
+position: absolute;
+left: 992px;
+top: 14px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+._15-off4 {
+color: #fffcfc;
+text-align: center;
+font-family: "Itim-Regular", sans-serif;
+font-size: 24px;
+font-weight: 400;
+position: absolute;
+left: 995px;
+top: 20px;
+width: 84px;
+height: 32px;
+}
+.desconto-informatica {
+background: #bd4bff;
+border-radius: 5px;
+width: 89px;
+height: 70px;
+position: absolute;
+left: 661px;
+top: 14px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+._15-off4 {
+color: #fffcfc;
+text-align: center;
+font-family: "Itim-Regular", sans-serif;
+font-size: 24px;
+font-weight: 400;
+position: absolute;
+left: 663px;
+top: 18px;
+width: 84px;
+height: 32px;
+}
+.group-6,
+.group-6 * {
+box-sizing: border-box;
+}
+.group-6 {
+position: relative;
+left: 25px;
+}
+.slide-2-1 {
+width: 1253px;
+height: 453px;
+position: absolute;
+left: 25px;
+top: 180px;
+object-fit: cover;
+}
+.rectboard1 {
+border-radius: 0px;
+width: 671px;
+height: 162px;
+position: absolute;
+left: 291px;
+top: 354px;
+overflow: visible;
+}
+.turmas-disponiveis {
+color: #fff6f6;
+text-align: left;
+font-family: "Inter-ExtraBold", sans-serif;
+font-size: 32px;
+font-weight: 800;
+position: absolute;
+left: 432px;
+top: 422px;
+width: 560px;
+height: 78px;
+}
+.group-7,
+.group-7 * {
+box-sizing: border-box;
+}
+.group-7 {
+position: relative;
+left: 0px;
+}
+.rectangle-horarios {
+background: #fffcfc;
+border-radius: 20px;
+border-style: solid;
+border-color: #05f309;
+border-width: 5px;
+width: 1249px;
+height: 340px;
+position: absolute;
+left: 35px;
+top: 640px;
+}
+.dias-e-horarios {
+color: #000000;
+text-align: center;
+font-family: "Inter-ExtraBold", sans-serif;
+font-size: 32px;
+font-weight: 800;
+position: absolute;
+left: 505px;
+top: 680px;
+}
+.turma-noite {
+color: #1d6cff;
+text-align: center;
+font-family: "Inter-ExtraBold", sans-serif;
+font-size: 28px;
+font-weight: 800;
+position: absolute;
+left: 358px;
+top: 720px; 
+width: 576px;
+height: 218px;
+}
+.group-8,
+.group-8 * {
+box-sizing: border-box;
+}
+.group-8 {
+position: relative;
+}
+.rectangle-3 {
+background: #356eff;
+border-radius: 20px;
+width: 824px;
+height: 640px;
+position: absolute;
+left: 40px;
+top: 1010px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.estudante-1 {
+border-radius: 10px;
+width: 425px;
+height: 640px;
+position: absolute;
+left: 850px;
+top: 1010px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+object-fit: cover;
+}
+.de-um-novo {
+color: #fff7f7;
+text-align: center;
+font-family: "Inter-ExtraBold", sans-serif;
+font-size: 38px;
+font-weight: 800;
+position: absolute;
+left: 120px;
+top: 1100px;
+width: 622px;
+height: 448px;
+}
+.group-9,
+.group-9 * {
+box-sizing: border-box;
+}
+.group-9 {
+position: relative;
+}
+.group-9 img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.group-9 img:active {
+  transform: scale(1.1) rotate(5deg); /* Aumenta e inclina um pouco */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.l-1-1 {
+width: 339px;
+height: 486px;
+position: absolute;
+left: 100px;
+top: 1700px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+object-fit: cover;
+}
+.l-2-2 {
+width: 339px;
+height: 485.9px;
+position: absolute;
+left: 495px;
+top: 1700px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+object-fit: cover;
+}
+.l-3-1 {
+width: 339px;
+height: 485.9px;
+position: absolute;
+left: 890px;
+top: 1700px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+object-fit: cover;
+}
+.group-10,
+.group-10 * {
+box-sizing: border-box;
+}
+.group-10 {
+position: relative;
+top: 200;
+}
+.rectangle-pagamentos {
+background: #b6b4b4;
+width: 1280px;
+height: 395px;
+position: absolute;
+left: 25px;
+top: 2250px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.pix-1 {
+width: 54px;
+height: 52px;
+position: absolute;
+left: 363px;
+top: 119px;
+object-fit: cover;
+}
+.master-1 {
+width: 62px;
+height: 48px;
+position: absolute;
+left: 233px;
+top: 122px;
+object-fit: cover;
+}
+.visa-1 {
+width: 77px;
+height: 22px;
+position: absolute;
+left: 97px;
+top: 134px;
+object-fit: cover;
+}
+.formas-de-pagamento {
+color: #fff7f7;
+text-align: center;
+font-family: "Itim-Regular", sans-serif;
+font-size: 36px;
+font-weight: 400;
+position: absolute;
+left: 6px;
+top: 35px;
+width: 535px;
+height: 28px;
+}
+.siga-redes {
+color: #fff7f7;
+text-align: center;
+font-family: "Itim-Regular", sans-serif;
+font-size: 40px;
+font-weight: 400;
+position: absolute;
+left: 820px;
+top: 35px;
+width: 390px;
+height: 38px;
+}
+.pelo-zap {
+color: #fff7f7;
+text-align: center;
+font-family: "Itim-Regular", sans-serif;
+font-size: 40px;
+font-weight: 400;
+position: absolute;
+left: 820px;
+top: 210px;
+width: 390px;
+height: 28px;
+}
+.cel {
+color: #fff7f7;
+text-align: center;
+font-family: "Itim-Regular", sans-serif;
+font-size: 36px;
+font-weight: 400;
+position: absolute;
+left: 848px;
+top: 244px;
+width: 435px;
+height: 28px;
+}
+.facebook {
+width: 44px;
+height: 43px;
+position: absolute;
+left: 903px;
+top: 160px;
+object-fit: cover;
+}
+.instagram {
+width: 42px;
+height: 43px;
+position: absolute;
+left: 1060px;
+top: 160px;
+object-fit: cover;
+}
+.what {
+width: 74px;
+height: 73px;
+position: absolute;
+left: 810px;
+top: 360px;
+transform-origin: 0 0;
+transform: rotate(280deg) scale(1, -1);
+object-fit: cover;
+}
+.politica {
+color: #fffcfc;
+text-align: left;
+font-family: "Itim-Regular", sans-serif;
+font-size: 18px;
+font-weight: 400;
+position: absolute;
+left: 49px;
+top: 225px;
+width: 826px;
+height: 145px;
+}
+.politica-de-privacidade {
+color: #fffcfc;
+font-family: "Itim-Regular", sans-serif;
+font-size: 20px;
+font-weight: 400;
+text-decoration: underline;
+}
+
+.group-11,
+.group-11 * {
+box-sizing: border-box;
+}
+.group-11 {
+position: relative;
+top: 3100px;
+}
+.retangulo-flooter {
+background: #fffcfc;
+width: 1393px;
+height: 217px;
+position: absolute;
+left: 0px;
+top: 0px;
+}
+.todos-os-direitos {
+color: #aeaaaa;
+text-align: center;
+font-family: "Itim-Regular", sans-serif;
+font-size: 20px;
+font-weight: 400;
+position: absolute;
+left: 50px;
+top: -430px;
+width: 1250px;
+height: 140px;
+}
+.jbli-logo-link {
+  text-decoration: none; /* Remove o sublinhado */
+  display: inline-block; /* Garante que o link respeite o tamanho do conteúdo */
+}
+
+
+.rectboard-4 {
+  background: linear-gradient(
+  90deg,
+  rgba(255, 0, 0, 1) 0%,
+  rgba(249, 113, 8, 0.9) 100%
+);
+  border-radius: 5px;
+  width: 900px;
+  height: 132px;
+  position: absolute;
+  left: 291px;
+  top: 2102px;
+  overflow: visible;
+}
+.turmas-disponiveis1 {
+  color: #fff6f6;
+  text-align: left;
+  font-family: "Inter-ExtraBold", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  position: absolute;
+  left: 492px;
+  top: 2132px;
+  width: 540px;
+  height: 78px;
+}
+
+
+
+
+

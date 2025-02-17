@@ -1,0 +1,14 @@
+.carrossel-container {
+    max-width: 800px;  /* Define a largura máxima */
+    margin: auto;  /* Centraliza */
+    left: 10px;
+    top: 910px;
+  }
+  
+  .carousel img {
+    height: 500px; /* Define a altura fixa */
+    object-fit: cover; /* Mantém a proporção e corta o excesso */
+    margin-top: 150px;
+    left: 50px;
+  }
+  

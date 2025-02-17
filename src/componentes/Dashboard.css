@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'Fonte';
+  src: url('/fontes/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+h2 {
+   font-family: 'Fonte',sans-serif;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    background-color: rgba(47, 79, 79, 0.304);
+    box-shadow: .5px .5px 1px 1px rgb(151, 147, 147);
+
+
+  }
+  .card {
+    padding: 10px 10px 10px 5px;
+    margin: 10px;
+    width: 250px;
+    height: 150px;
+    background-color: #4CAF50; /* Verde */
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: .5px .5px 1px 1px rgb(151, 147, 147);
+  }
+  .card a{
+    color: black;
+    font-weight:bold;
+    margin: 5px;
+  }
+
+   /*estilo para telas menores*/
+   @media (max-width: 768px) {
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .card {
+        padding: 10px;
+        margin: 5px;
+        width: 200px;
+        height: 100px;
+        background-color: #4CAF50; /* Verde */
+        color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 8px;
+        font-size: 13px;
+        cursor: pointer;
+        transition: box-shadow 0.3s ease-in-out;
+      }
+      
+      .card p{
+        font-size: 1.2rem;
+        margin: 1px;
+      }
+    }
+    @media (max-width: 420px) {
+        
+        .card {
+            flex-direction: column;
+            padding: 10px;
+            margin: 6px;
+            width: 150px;
+            height: 80px;
+            background-color: #4CAF50; /* Verde */
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 8px;
+            font-size: 11px;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease-in-out;
+          }
+          .card a{
+            color: black;
+            font-weight:bold;
+            margin-top: 10px;
+          }
+        }

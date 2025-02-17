@@ -1,0 +1,191 @@
+/* Estilo geral */
+body {
+    font-family: 'Poppins', sans-serif; /* Fonte moderna */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-direction: column;
+  }
+  
+  @font-face {
+    font-family: 'Fonte';
+    src: url('/fontes/Poppins/Poppins-Regular.ttf') format('truetype');
+  }
+  .welcome-text {
+    font-family: 'Fonte',sans-serif;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    background-color: rgba(47, 79, 79, 0.304);
+    box-shadow: .5px .5px 1px 1px rgb(151, 147, 147);
+  }
+    
+  .left-section {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .description {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .fluorescent-button {
+    padding: 15px 30px;
+    background-color: #2d86da;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: .5px .5px 1px 1px rgb(151, 147, 147);
+  }
+  
+  .fluorescent-button:hover {
+    box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.6), 0 0 30px 5px rgba(255, 255, 255, 0.3);
+  }
+  
+  .right-section {       
+    margin: 10px -10px -40px -5px;
+    position: relative;
+    padding-bottom: 70%;
+    }
+
+  .right-section iframe{
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    width: 85%;
+    height: 80%;
+  }
+
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .footer-icons {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-icons img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  /*estilo para telas menores*/
+  @media (max-width: 768px) {
+    .home-container {
+      min-height: 85vh;
+    }
+
+    .welcome-text {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .description {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .fluorescent-button{
+    padding: 10px ;
+    background-color: #2d86da;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+    width: 90px;
+    }
+          
+   .footer {
+      margin-top: 30px;
+    }
+    .footer p {
+      font-size: 0.8rem;
+    } 
+          
+    .footer-icons img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  /*estilo para telas menores*/
+  @media (max-width: 420px) {
+      .home-container{
+      height:100%
+      
+      }
+    
+    
+    .fluorescent-button{
+      padding: 7px;
+      background-color: #2d86da;
+      color: rgb(255, 255, 255);
+      border: none;
+      border-radius: 8px;
+      font-size: 11px;
+      cursor: pointer;
+      transition: box-shadow 0.3s ease-in-out;
+      width: 70px;
+      }
+    .right-section iframe{
+       width: 95%;
+       left: 2%;
+      }      
+    .footer {
+      width: 95%;
+      margin-top: 30px;
+      }
+      
+    .footer p {
+      font-size: 0.6rem;
+    } 
+          
+    .footer-icons img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  

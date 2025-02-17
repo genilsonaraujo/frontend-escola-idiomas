@@ -1,0 +1,37 @@
+import React from 'react';
+import './Home.css'; // Para os estilos personalizados
+
+const Home = () => {
+  return (
+    <div className="home-container">
+      <div className="content">
+        <h1 className="welcome-text">Bem-vindo!</h1>
+        <div className="left-section">
+          <p className="description">
+            Aqui você pode gerenciar seus produtos de maneira eficiente!
+          </p>
+          <div className="button-container">
+            <button className="fluorescent-button">Produtos</button>
+            <button className="fluorescent-button">Saídas</button>
+          </div>
+        </div>
+        <div className="right-section">
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/fRlEmoSq78U?si=kj6VV5njg8EsydGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+         </iframe>
+        </div>
+      </div>
+      <footer className="footer">
+        <div className="footer-icons">
+           <img src="https://cdn.iconscout.com/icon/free/png-512/free-html5-logo-icon-download-in-svg-png-gif-file-formats--programming-language-coding-logos-icons-1720089.png?f=webp&w=256" alt="HMTL Icon" />
+          <img src="https://cdn.iconscout.com/icon/free/png-512/free-css-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-226095.png?f=webp&w=256" alt="CSS Icon" />
+          <img src="https://cdn.iconscout.com/icon/free/png-512/free-javascript-logo-icon-download-in-svg-png-gif-file-formats--brand-company-business-brands-pack-logos-icons-2284965.png?f=webp&w=256" alt="JavaScript Icon" />
+          <img src="https://cdn.iconscout.com/icon/free/png-512/free-react-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-langugae-freebies-pack-logos-icons-1175110.png?f=webp&w=256" alt="React Icon" />      
+        </div>
+        <p>© 2024 Gerenciamento de Produtos. Todos os direitos reservados.</p>
+      </footer>
+    </div>
+  );
+};
+
+export default Home;
+

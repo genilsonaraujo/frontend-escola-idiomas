@@ -1,0 +1,44 @@
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import './Navbar.css?v=1.0';
+
+function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleLogout = () => {
+    // Remover o token de autenticação do localStorage
+    localStorage.removeItem('access_token');
+    localStorage.removeItem('refresh_token');
+    
+    // Redirecionar para a página de login
+    navigate('/login');
+  };
+
+  return (
+    <nav className="navbar">
+      <div className="navbar-logo">Estoque Fácil</div>
+      <button className="navbar-toggle" onClick={toggleMenu}>
+        ☰
+      </button>
+      <ul className={isMenuOpen ? 'active' : ''}>
+        <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+        <li><Link to="/dashboard" onClick={toggleMenu}>Dashboard</Link></li>
+        <li><Link to="/CurvaABCDashboard" onClick={toggleMenu}>CurvaABC</Link></li>
+        <li><Link to="/produtos" onClick={toggleMenu}>Lista de Produtos</Link></li>
+        <li><Link to="/saidas" onClick={toggleMenu}>Lista de Saídas</Link></li>
+        <li><Link to="/fornecedor" onClick={toggleMenu}>Fornecedor</Link></li>
+        <li><Link to="/contato" onClick={toggleMenu}>Contato</Link></li>
+        <li><Link to="/login" onClick={toggleMenu}>Login</Link></li>
+        <li><button onClick={handleLogout}>Logout</button></li> {/* Botão de logout */}
+      </ul>
+    </nav>
+  );
+}
+
+export default Navbar;
+
