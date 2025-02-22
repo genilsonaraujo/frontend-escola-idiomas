@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
   .container {
-      flex-direction: column;
+    flex-direction: column;
   }
 }
 @media (max-width: 768px) {
@@ -14,6 +14,10 @@
   }
 }
 
+.header {
+  background-color: #05f309;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -25,6 +29,10 @@ body {
   transform-origin: top left; /* Define o ponto de origem para a transformação */
   
   
+}
+.body {
+  background-color: red;
+  border-radius: 10px;
 }
 
 .container {
@@ -50,27 +58,20 @@ header {
   padding: 1rem 0;
 }
 
-
-.group-1,
-.group-1 * {
-box-sizing: border-box;
-}
-.group-1 {
-position: relative;
-}
 .rectboard {
-background: linear-gradient(
+  background: linear-gradient(
   90deg,
   rgba(255, 0, 0, 1) 0%,
-  rgba(249, 113, 8, 0.9) 100%
-);
-width: 1280px;
-height: 248px;
-position: absolute;
-left: 0px;
-top: 0px;
-z-index: 0; /* Certifique-se de que esse valor é maior que o dos outros elementos */
+  rgba(249, 113, 8, 0.9) 100%);
+  border-radius: 50px 10px 20px 10px;
+  width: 1280px;
+  height: 248px;
+  position: absolute;
+  top: 10px;
+  left: 57px;
+  z-index: 0; /* Certifique-se de que esse valor é maior que o dos outros elementos */
 }
+
 .botao-portal {
   background: #ebe2e2; /* Cor de fundo do botão */
   border-radius: 20px;
@@ -135,25 +136,20 @@ object-fit: cover;
   align-items: center;
   justify-content: center;
 }
-.group-2,
-.group-2 * {
-box-sizing: border-box;
-}
-.group-2 {
-position: relative;
-}
+
 .menu-inferior {
-display: flex;
-background: #f1b6b6;
-width: 1280px;
-height: 78px;
-position: relative;
-left: 0px;
-top: 170px;
-justify-content: space-around; /* Distribui os itens igualmente */
-flex-wrap: wrap; /* Evita sobreposição em telas menores */
-gap: 10px; /* Espaçamento entre os links */
+  display: flex;
+  background: blue;
+  width: 1280px;
+  height: 78px;
+  position: ;
+  left: 0px;
+  top: 170px;
+  justify-content: space-around; /* Distribui os itens igualmente */
+  flex-wrap: wrap; /* Evita sobreposição em telas menores */
+  gap: 10px; /* Espaçamento entre os links */
 }
+
 /*.menu-inferior a {
   text-decoration: none;
   padding: 10px 15px;
@@ -164,7 +160,7 @@ gap: 10px; /* Espaçamento entre os links */
   transition: background 0.3s;
 }*/
 
-.home {
+. {
 color: #ff0000;
 text-align: left;
 font-family: "Inter-Regular", sans-serif;
@@ -177,7 +173,7 @@ top: 200px;
 width: 82px;
 height: 53px;
 }
-.portal-do-professor {
+.portal-do-professo {
 color: #ff0000;
 text-align: left;
 font-family: "Inter-Regular", sans-serif;
@@ -189,7 +185,7 @@ top: 200px;
 width: 252px;
 height: 53px;
 }
-.cursos {
+.curso {
 color: #ff0000;
 text-align: left;
 font-family: "Inter-Regular", sans-serif;
@@ -201,7 +197,7 @@ top: 200px;
 width: 154px;
 height: 53px;
 }
-.loja {
+.loj {
 color: #ff0000;
 text-align: left;
 font-family: "Inter-Regular", sans-serif;
@@ -213,7 +209,7 @@ top: 200px;
 width: 82px;
 height: 53px;
 }
-.cadastro {
+.cadastr {
 color: #ff0000;
 text-align: left;
 font-family: "Inter-Regular", sans-serif;
@@ -225,7 +221,7 @@ top: 200px;
 width: 132px;
 height: 53px;
 }
-.sobre {
+.sobr {
 color: #ff0000;
 text-align: left;
 font-family: "Inter-Regular", sans-serif;
